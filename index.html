@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123c2a">
+  <meta name="description" content="शासकीय गजानन माधव मुक्तिबोध महाविद्यालय, सहसपुर लोहारा की NCC इकाई की जानकारी।">
+  <title>NCC | शासकीय गजानन माधव मुक्तिबोध महाविद्यालय</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> राष्ट्रीय कैडेट कोर · एकता और अनुशासन</div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="होम">
+      <span class="brand-mark">NCC</span>
+      <span class="brand-copy"><strong>शासकीय गजानन माधव मुक्तिबोध महाविद्यालय</strong><small>सहसपुर लोहारा · NCC इकाई</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="मेन्यू खोलें">☰</button>
+    <nav class="main-nav" id="main-nav" aria-label="मुख्य मेन्यू">
+      <button class="nav-link active" data-page="home">होम</button>
+      <button class="nav-link" data-page="cadets">कैडेट्स</button>
+      <button class="nav-link" data-page="achievements">उपलब्धियाँ</button>
+      <button class="nav-link" data-page="notices">सूचनाएँ</button>
+      <button class="nav-link admin-link" data-page="admin">⚙ एडमिन</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page active" id="page-home">
+      <div class="hero">
+        <div class="hero-content">
+          <span class="eyebrow"><span class="tiny-star">✦</span> राष्ट्रीय कैडेट कोर</span>
+          <h1>अनुशासन से<br><em>नेतृत्व तक।</em></h1>
+          <p>शासकीय गजानन माधव मुक्तिबोध महाविद्यालय, सहसपुर लोहारा की NCC इकाई में आपका स्वागत है। सेवा, साहस और राष्ट्रभक्ति के साथ आगे बढ़ें।</p>
+          <div class="hero-actions"><button class="button button-light" data-goto="cadets">हमारे कैडेट्स <span>→</span></button><button class="text-button" data-goto="achievements">उपलब्धियाँ देखें <span>↗</span></button></div>
+          <div class="hero-motto"><span></span> UNITY AND DISCIPLINE</div>
+        </div>
+        <div class="hero-art" aria-hidden="true"><div class="sun"></div><div class="rings ring-one"></div><div class="rings ring-two"></div><div class="art-number">N<br><small>C<br>C</small></div><div class="art-caption"> सेवा · नेतृत्व · समर्पण</div></div>
+      </div>
+      <div class="stats-row"><div class="stat"><strong id="stat-cadets">0</strong><span>कैडेट्स</span></div><div class="stat"><strong id="stat-years">—</strong><span>सक्रिय बैच</span></div><div class="stat"><strong id="stat-achievements">0</strong><span>उपलब्धियाँ</span></div><div class="stat"><strong>एकता</strong><span>और अनुशासन</span></div></div>
+      <section class="content-section intro-grid"><div><span class="section-kicker">हमारी इकाई</span><h2>युवा शक्ति,<br><em>राष्ट्र सेवा।</em></h2></div><div class="intro-copy"><p>राष्ट्रीय कैडेट कोर युवाओं में अनुशासन, नेतृत्व, चरित्र और सामाजिक सेवा की भावना विकसित करता है। हमारी महाविद्यालयीन इकाई कैडेट्स को प्रशिक्षण, शिविरों और सामुदायिक गतिविधियों के माध्यम से सीखने का अवसर देती है।</p><button class="inline-link" data-goto="cadets">कैडेट सूची देखें <span>→</span></button></div></section>
+      <section class="content-section home-panels"><div class="panel-heading"><div><span class="section-kicker">अपडेट</span><h2>सूचनाएँ और <em>खास पल</em></h2></div><button class="inline-link" data-goto="notices">सभी सूचनाएँ <span>→</span></button></div><div class="feature-grid" id="home-highlights"></div></section>
+      <section class="rank-strip"><div><span class="section-kicker">नेतृत्व</span><h2>हर साल के <em>वरिष्ठ रैंक</em></h2><p>बैच और वर्ष के अनुसार कैडेट नेतृत्व की जानकारी।</p></div><div id="home-ranks" class="rank-list"></div></section>
+    </section>
+
+    <section class="page" id="page-cadets">
+      <div class="page-heading"><span class="section-kicker">हमारी टीम</span><h1>कैडेट <em>परिचय</em></h1><p>हमारी NCC इकाई के समर्पित कैडेट्स और उनके नेतृत्व की जानकारी।</p></div>
+      <div class="toolbar"><label class="search-box"><span>⌕</span><input id="cadet-search" type="search" placeholder="नाम, रैंक या बैच खोजें" aria-label="कैडेट खोजें"></label><select id="cadet-filter" aria-label="रैंक के अनुसार फ़िल्टर"><option value="all">सभी रैंक</option></select></div>
+      <div class="cadet-grid" id="cadet-grid"></div><div class="empty-state" id="cadet-empty" hidden>अभी कैडेट प्रोफाइल नहीं जोड़ी गई हैं।</div>
+      <div class="privacy-note"><span>ⓘ</span><p>कैडेट्स के मोबाइल नंबर और रेजिमेंट नंबर सार्वजनिक नहीं दिखाए जाते। इन्हें केवल अधिकृत एडमिन रिकॉर्ड में रखें और प्रकाशित करने से पहले अनुमति लें।</p></div>
+    </section>
+
+    <section class="page" id="page-achievements">
+      <div class="page-heading"><span class="section-kicker">गौरव के पल</span><h1>हमारी <em>उपलब्धियाँ</em></h1><p>प्रशिक्षण, शिविरों और सेवा गतिविधियों में कैडेट्स की उपलब्धियों का सफर।</p></div>
+      <div class="achievement-grid" id="achievement-grid"></div><div class="empty-state" id="achievement-empty" hidden>अभी उपलब्धियाँ नहीं जोड़ी गई हैं।</div>
+    </section>
+
+    <section class="page" id="page-notices">
+      <div class="page-heading"><span class="section-kicker">महत्वपूर्ण जानकारी</span><h1>सूचना <em>पटल</em></h1><p>NCC इकाई की नवीनतम घोषणाएँ और कार्यक्रम।</p></div>
+      <div class="notice-list" id="notice-list"></div><div class="empty-state" id="notice-empty" hidden>अभी कोई सूचना उपलब्ध नहीं है।</div>
+    </section>
+
+    <section class="page" id="page-admin">
+      <div class="page-heading"><span class="section-kicker">कंटेंट प्रबंधन</span><h1>एडमिन <em>पैनल</em></h1><p>कैडेट, उपलब्धियाँ और सूचनाएँ जोड़ें या अपडेट करें।</p></div>
+      <div class="admin-warning"><strong>प्रोटोटाइप मोड</strong><span>इस डेमो में बदलाव इसी ब्राउज़र में सेव होते हैं। यह लॉगिन-सुरक्षित नहीं है और दूसरे लोगों की वेबसाइट पर बदलाव प्रकाशित नहीं करता। वास्तविक उपयोग के लिए सुरक्षित सर्वर, एडमिन लॉगिन और डेटाबेस जोड़ना आवश्यक है।</span></div>
+      <div class="admin-tabs" role="tablist"><button class="admin-tab active" data-admin-tab="cadets">कैडेट्स</button><button class="admin-tab" data-admin-tab="achievements">उपलब्धियाँ</button><button class="admin-tab" data-admin-tab="notices">सूचनाएँ</button></div>
+      <div class="admin-panel active" id="admin-cadets"><div class="admin-section-title"><h2>कैडेट प्रोफाइल</h2><button class="button button-green" id="add-cadet">＋ नया कैडेट</button></div><div id="admin-cadet-list" class="admin-list"></div><form class="editor-form" id="cadet-form" hidden><h3 id="cadet-form-title">कैडेट जोड़ें</h3><input type="hidden" name="id"><div class="form-grid"><label>पूरा नाम<input name="name" required placeholder="कैडेट का नाम"></label><label>रैंक<input name="rank" required placeholder="जैसे: सीनियर अंडर ऑफिसर"></label><label>बैच / वर्ष<input name="year" placeholder="जैसे: 2025–26"></label><label>कैडेट प्रकार<select name="type"><option>JD</option><option>JW</option><option>SD</option><option>SW</option></select></label><label>फोटो URL<input name="photo" type="url" placeholder="https://..."></label><label>मोबाइल नंबर <small>(निजी रिकॉर्ड)</small><input name="phone" type="tel" placeholder="सार्वजनिक नहीं दिखेगा"></label><label>रेजिमेंट नंबर <small>(निजी रिकॉर्ड)</small><input name="regiment" placeholder="सार्वजनिक नहीं दिखेगा"></label></div><div class="form-actions"><button class="button button-green" type="submit">सेव करें</button><button class="button button-outline" type="button" data-cancel="cadet-form">रद्द करें</button></div></form></div>
+      <div class="admin-panel" id="admin-achievements"><div class="admin-section-title"><h2>उपलब्धियाँ</h2><button class="button button-green" id="add-achievement">＋ नई उपलब्धि</button></div><div id="admin-achievement-list" class="admin-list"></div><form class="editor-form" id="achievement-form" hidden><h3 id="achievement-form-title">उपलब्धि जोड़ें</h3><input type="hidden" name="id"><div class="form-grid"><label>शीर्षक<input name="title" required></label><label>वर्ष<input name="date" placeholder="जैसे: 2025"></label><label class="full-field">विवरण<textarea name="description" rows="3"></textarea></label><label class="full-field">फोटो URL<input name="photo" type="url" placeholder="https://..."></label></div><div class="form-actions"><button class="button button-green" type="submit">सेव करें</button><button class="button button-outline" type="button" data-cancel="achievement-form">रद्द करें</button></div></form></div>
+      <div class="admin-panel" id="admin-notices"><div class="admin-section-title"><h2>सूचनाएँ</h2><button class="button button-green" id="add-notice">＋ नई सूचना</button></div><div id="admin-notice-list" class="admin-list"></div><form class="editor-form" id="notice-form" hidden><h3 id="notice-form-title">सूचना जोड़ें</h3><input type="hidden" name="id"><div class="form-grid"><label>शीर्षक<input name="title" required></label><label>तारीख<input name="date" type="date"></label><label class="full-field">विवरण<textarea name="description" rows="4" required></textarea></label></div><div class="form-actions"><button class="button button-green" type="submit">सेव करें</button><button class="button button-outline" type="button" data-cancel="notice-form">रद्द करें</button></div></form></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="footer-brand"><span class="brand-mark">NCC</span><div><strong>शासकीय गजानन माधव मुक्तिबोध महावि���्यालय</strong><small>सहसपुर लोहारा</small></div></div><p>एकता और अनुशासन · NCC इकाई</p><span class="footer-year">© <span id="current-year"></span></span></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
